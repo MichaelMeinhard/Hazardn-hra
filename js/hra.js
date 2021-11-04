@@ -6,13 +6,15 @@ const result = document.getElementById('result');
 const coins = document.getElementById('money');
 const bankrot = document.getElementById('bankrot');
 let sum;
-let money = 100;
+let money = 5;
 let timer = false;
 let hody = [];
 var roll = new Audio();
 roll.src = "media/dice.mp3"
 var win = new Audio();
 win.src = "media/jackpot.mp3"
+var lose = new Audio();
+lose.src = "media/lose.mp3"
 
 function luck(){
     if((hod + hod2 + hod3) >=13){
@@ -21,6 +23,7 @@ function luck(){
         coins.innerHTML = `<div id="money"><b>Peníze štěstí: ${money}</b></div>`
     }
     else if(money == 0){
+        lose.play();
         bankrot.innerHTML = `<div class="alert alert-danger velikost" role="alert">
         <strong>Nemáš <b>peníze štěstí</b> (bankrotoval si), resetuj stránku.</strong>
     </div>`
