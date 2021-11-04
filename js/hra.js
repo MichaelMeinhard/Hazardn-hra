@@ -6,7 +6,7 @@ const result = document.getElementById('result');
 const coins = document.getElementById('money');
 const bankrot = document.getElementById('bankrot');
 let sum;
-let money = 5;
+let money = 100;
 let timer = false;
 let hody = [];
 var roll = new Audio();
