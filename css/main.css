@@ -1,7 +1,6 @@
 .kostka{
     border: 3px solid blue;
     padding: 10px;
-    margin-left: 342px;
     border-radius: 5px;
 }
 .kostka2{
@@ -19,3 +18,7 @@
 .velikost{
     font-size: 120%;
 }
+.images  {
+    width:100%;
+    white-space: nowrap;
+ }
